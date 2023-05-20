@@ -1,0 +1,15 @@
+{
+  "name": "layerzero-bridge.sdk",
+  "version": "1.0.0",
+  "description": "layerzero-bridge.sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "harmony",
+  "license": "ISC",
+  "dependencies": {
+    "bn.js": "^5.2.1",
+    "web3": "^1.8.0"
+  }
+}

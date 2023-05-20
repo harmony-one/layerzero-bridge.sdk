@@ -2,14 +2,51 @@
   "name": "layerzero-bridge.sdk",
   "version": "1.0.0",
   "description": "layerzero-bridge.sdk",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf lib && tsc",
+    "test": "node lib/examples/example.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harmony-one/layerzero-bridge.sdk"
+  },
+  "bin": "./lib",
+  "keywords": [],
   "author": "harmony",
   "license": "ISC",
+  "devDependencies": {
+    "@types/bip39": "^3.0.0",
+    "@types/hdkey": "^0.7.1",
+    "@types/signale": "^1.4.1",
+    "@types/websocket": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "bn.js": "^5.1.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.5.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.0",
+    "signale": "^1.4.0",
+    "ts-node": "^9.0.0",
+    "tslib": "^1.10.0",
+    "typescript": "^4.0.3"
+  },
   "dependencies": {
-    "bn.js": "^5.2.1",
-    "web3": "^1.8.0"
+    "@harmony-js/core": "^0.1.55",
+    "axios": "^0.21.4",
+    "bignumber.js": "^9.0.1",
+    "superagent": "^3.8.3",
+    "web3": "^1.3.0"
   }
 }
